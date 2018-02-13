@@ -1,10 +1,10 @@
 import React from 'react'
+import Item from './Item'
 
-const Items = (props) => {
-  return (
-      <div className="container">
-        Items {props.name.map(item => <div className="card"> {item} </div>)}
-      </div>
+const Items = ({items}) => {
+    let itemList = items.map( item => <Item key={item.id} items={item}/> )
+    return (
+        <div>{itemList}</div>
     )
 }
 
