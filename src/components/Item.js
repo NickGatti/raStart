@@ -1,8 +1,16 @@
 import React from 'react'
+import picUrl from '../img/potion.jpg'
 
 const Item = ({item}) => {
     return (
-        <div>{item.name}</div>
+        <div className="card">
+        <h4>{item.name}</h4>
+            <div className="card-image">
+                <img src={picUrl}/>
+            </div>
+        
+        
+        </div>
     )
 }
 

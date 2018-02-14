@@ -10,15 +10,18 @@ const applicationState = {
   items: [
     {
       key: 1,
-      name: 'Magic Elixir 1'
+      name: 'Magic Elixir 1',
+      src: './img/potion.jpg'
     },
     {
       key: 2,
-      name: 'Magic Elixir 2'
+      name: 'Magic Elixir 2',
+      src: './img/potion.jpg'
     },
     {
       key: 3,
-      name: 'Magic Elixir 3'
+      name: 'Magic Elixir 3',
+      src: './img/potion.jpg'
     }
   ]
 }
@@ -28,7 +31,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Items items={applicationState.items}/>
+        <Items items={applicationState.items} />
         <Footer year="2018"/>
       </div>
     );
