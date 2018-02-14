@@ -1,28 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Items from './components/Items'
+import ShoppingCart from './components/ShoppingCart'
 
-const applicationState = {
+let applicationState = {
   items: [
-    {
-      key: 1,
-      name: 'Magic Elixir 1',
-      src: './img/potion.jpg'
-    },
-    {
-      key: 2,
-      name: 'Magic Elixir 2',
-      src: './img/potion.jpg'
-    },
-    {
-      key: 3,
-      name: 'Magic Elixir 3',
-      src: './img/potion.jpg'
-    }
+    { id: 1, product: { id: 40, name: 'Mediocre Iron Watch', priceInCents: 399 }, quantity: 1 },
+    { id: 2, product: { id: 41, name: 'Heavy Duty Concrete Plate', priceInCents: 499 }, quantity: 2 },
+    { id: 3, product: { id: 42, name: 'Intelligent Paper Knife', priceInCents: 1999 }, quantity: 1 },
   ]
 }
 
@@ -31,7 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Items items={applicationState.items} />
+        <ShoppingCart items={applicationState.items}/>
         <Footer year="2018"/>
       </div>
     );

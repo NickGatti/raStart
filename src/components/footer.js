@@ -2,16 +2,16 @@ import React from 'react'
 
 const Footer = (props) => {
   return (
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Shop ALL THE THINGS</h5>
+    <footer className="page-footer">
+      <div className="container">
+        <div className="row">
+          <div className="col l6 s12">
+            <h5 className="white-text">Shop ALL THE THINGS</h5>
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
+      <div className="footer-copyright">
+        <div className="container">
           &copy; {props.year}
         </div>
       </div>
